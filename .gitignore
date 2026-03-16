@@ -1,2 +1,5 @@
 /bloom-wallet-backend/logs
 /bloom-wallet-backend/storage
+/bloom-wallet_forntend/node_modules
+/bloom-wallet_forntend/dist
+/bloom-wallet_forntend/package-lock.json
