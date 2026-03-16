@@ -9,11 +9,13 @@ import MainLayout from './layouts/MainLayout.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
 import AccountsPage from './pages/AccountsPage.jsx';
 import ReceivePage from './pages/ReceivePage.jsx';
+import WalletSetupPage from './pages/WalletSetupPage.jsx';
 
 const routes = [
   { key: 'dashboard', label: '概览' },
   { key: 'accounts', label: '账户' },
   { key: 'receive', label: '收款' },
+  { key: 'setup', label: '创建/恢复' },
 ];
 
 export default function App() {
@@ -22,6 +24,7 @@ export default function App() {
   const page = useMemo(() => {
     if (route === 'accounts') return <AccountsPage />;
     if (route === 'receive') return <ReceivePage />;
+    if (route === 'setup') return <WalletSetupPage />;
     return <DashboardPage />;
   }, [route]);
 
