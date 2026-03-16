@@ -1,0 +1,20 @@
+ENV: "production"
+PORT: "8081"
+DATABASE:
+  HOST: "localhost"
+  PORT: "3306"
+  USER: "root"
+  PASSWORD: "123456"
+  NAME: "bloom-wallet"
+  ISMIGRATE: false
+JWT:
+  SECRET: "a15f0bd8594987889bd9be78e35ec9d4"
+  EXPIRE_TIME: 24
+  ISSUER: "bloom-wallet"
+  SUBJECT: "bloom-wallet"
+  AUDIENCE: "bloom-wallet"
+  ALGORITHM: "HS256"
+SALES:
+  NETWORK_URL: "http://127.0.0.1:8545"
+  SALE_FACTORY_ADDRESS: "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318"
+  PRIVATE_KEY: "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"

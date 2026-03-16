@@ -1,0 +1,21 @@
+
+version: '3'
+
+services:
+  bloom-wallet:
+    build: ../.
+    container_name: bloom-wallet
+    image: registry.localdev:5000/bloom-wallet/bloom-wallet-go:0.0.1
+    restart: always
+    ports:
+    - 8081:8081
+    environment:
+      - GO_ENV=production  # 设置环境变量
+    networks:
+      - bloom-wallet_net
+    # volumes:
+    #   - ./config:/app/config
+      
+networks:
+  bloom-wallet_net:
+
